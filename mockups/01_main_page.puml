@@ -1,0 +1,32 @@
+@startuml
+title "Главная страница"
+
+' === ВЕРХНЯЯ ЧАСТЬ ===
+rectangle "<size:18><b>📅 EventPlanner</b></size>" as logo
+
+rectangle "🏠 Главная" as home
+rectangle "📋 Мои мероприятия" as my_events
+rectangle "📊 Календарь" as calendar
+
+rectangle "👤 Иван Петров" as profile
+rectangle "🚪 Выйти" as logout
+
+' === ЦЕНТРАЛЬНАЯ ЧАСТЬ ===
+rectangle "<size:16><b>✨ Мои мероприятия</b></size>" as title
+
+rectangle "<b><color:white>  ➕ Создать мероприятие  </color></b>" as create_btn
+
+' === СПИСОК МЕРОПРИЯТИЙ ===
+rectangle "📌 Защита диплома" as event1
+rectangle "🗓 20.05.2026 | ⏰ 14:00 | 📍 Онлайн" as event1_details
+
+rectangle "📌 Встреча с руководителем" as event2
+rectangle "🗓 18.05.2026 | ⏰ 11:30 | 📍 Ауд. 301" as event2_details
+
+rectangle "📌 Конференция IT Future" as event3
+rectangle "🗓 25.05.2026 | ⏰ 10:00 | 📍 Отель Иркутск" as event3_details
+
+' === НИЖНЯЯ ЧАСТЬ ===
+rectangle "© 2026 EventPlanner" as copyright
+rectangle "ИРНИТУ × Усть-Лабинский СПК" as authors
+@enduml
