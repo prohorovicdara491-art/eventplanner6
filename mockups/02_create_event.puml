@@ -1,0 +1,36 @@
+@startuml
+title "Создание мероприятия"
+
+' === ВЕРХНЯЯ ЧАСТЬ ===
+rectangle "📅 EventPlanner" as logo
+rectangle "← К списку мероприятий" as back
+
+' === ЗАГОЛОВОК ===
+rectangle "<size:16><b>➕ Создание мероприятия</b></size>" as form_title
+
+' === ФОРМА ===
+rectangle "Название:" as name_label
+rectangle "[ Введите название мероприятия ]" as name_input
+
+rectangle "Дата:" as date_label
+rectangle "[ 20.05.2026 ]" as date_input
+
+rectangle "Время:" as time_label
+rectangle "[ 14:00 ]" as time_input
+
+rectangle "Место:" as place_label
+rectangle "[ Аудитория / ссылка ]" as place_input
+
+rectangle "Категория:" as category_label
+rectangle "[ Работа ▼ ]" as category_input
+
+rectangle "Описание:" as desc_label
+rectangle "[ Подробное описание... ]" as desc_input
+
+' === КНОПКИ ===
+rectangle "<b><color:white>  ✅ Сохранить  </color></b>" as save_btn
+rectangle "❌ Отмена" as cancel_btn
+
+' === НИЖНЯЯ ЧАСТЬ ===
+rectangle "© 2026 EventPlanner" as copyright
+@enduml
